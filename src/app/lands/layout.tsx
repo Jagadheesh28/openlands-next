@@ -1,4 +1,5 @@
 "use client";
+import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 
 const LandsPageLayout = ({
@@ -9,7 +10,8 @@ const LandsPageLayout = ({
   return (
     <div className="w-screen h-screen">
       <Canvas>
-        <ambientLight />
+        <ambientLight intensity={2}  />
+        <OrbitControls />
         {children}
       </Canvas>
     </div>
