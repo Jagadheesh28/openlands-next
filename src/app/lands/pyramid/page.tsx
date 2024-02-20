@@ -1,7 +1,10 @@
+'use client'
 import { Pyramid } from "@/screens";
 
 const PyramidPage = () => {
-  return <></>;
+  return <> 
+    <Pyramid />
+  </>;
 };
 
 export default PyramidPage;
