@@ -1,8 +1,9 @@
-import { Gltf } from "@react-three/drei";
+import { Gltf, OrbitControls } from "@react-three/drei";
 
 const Pyramid = () => {
   return <>
-  <Gltf src="/pyramid/Pyramids.glb" scale={1} position={[0, 0, 0]} />
+  <Gltf src="/pyramid/Pyramids.glb" scale={1} position={[0, -4, 0]} />
+  <OrbitControls />
   </>;
 };
 
